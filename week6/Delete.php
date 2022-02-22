@@ -1,5 +1,5 @@
 <?php
-$delete_ID = $_REQUEST['EmployeeID'];
+$delete_ID = $_POST['EmployeeID'];
 
 include ('connect.php');
 
