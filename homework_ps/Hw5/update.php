@@ -1,4 +1,5 @@
 <?php
+
 include 'connect.php';
 $EmployeeID    = $_REQUEST['EmployeeID'];
 $Title         =$_REQUEST['Title'];
@@ -7,14 +8,14 @@ $Sex          =$_REQUEST['Sex'];
 $Education    =$_REQUEST['Education'];
 $Start_Date   =$_REQUEST['Start_Date'];
 $Salary       =$_REQUEST['Salary'];
-$DepartmentID    =$_REQUEST['DepartmentID '];
+$DepartmentID    =$_REQUEST['DepartmentID'];
 
 
-$sql  = "INSERT INTO employee(EmployeeID,Title,Name,Sex,Education,Start_Date,
-Salary,DepartmentID)values('$EmployeeID','$Title','$Name','$Sex' ,'$Education','$Start_Date'
-,'$Salary','$DepartmentID')";
+$sql  = "UPDATE employee SET ,Title=$Title,
+Name=$Name,Sex=$Sex,Education=$Education,Start_Date=$Start_Date,Salary=$Salary,
+DepartmentID=$DepartmentID WHERE EmployeeID=$EmployeeID";
 
-$objQuery = mysqli_query($con,$sql);
+$objQuery = mysqli_query($conn,$sql);
 if($objQuery){
     echo"New record Inserted successfully";
 }else{

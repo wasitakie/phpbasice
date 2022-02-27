@@ -1,4 +1,5 @@
 <?php
+
 include ('connect.php');
 $EmployeeID     = $_REQUEST['EmployeeID'];
 $Title          = $_REQUEST['Title'];
@@ -10,7 +11,7 @@ $Salary         = $_REQUEST['Salary'];
 $DepartmentID   = $_REQUEST['DepartmentID'];
 
 
-$sql  = "INSERT INTO employee set (EmployeeID,Title,Name,Sex,Education,Start_Date,
+$sql  = "INSERT INTO employee  (EmployeeID,Title,Name,Sex,Education,Start_Date,
 Salary,DepartmentID)values('$EmployeeID','$Title','$Name','$Sex' ,'$Education','$Start_Date'
 ,'$Salary','$DepartmentID')";
 

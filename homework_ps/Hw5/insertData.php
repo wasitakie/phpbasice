@@ -11,7 +11,7 @@
 
 <body>
     <h1>Insert Data : Employee</h1>
-    <form action="insert.php" method="post" name="Employee">
+    <form action="insert.php" method="post" name="employee">
         <table border="2">
             <tr>
                 <td>EmployeeID:</td>
